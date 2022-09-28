@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background_design3"
+    tools:context=".LeaveMovieComment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/LeaveComment"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/AddCommentMovie_Image"
+        android:layout_width="89dp"
+        android:layout_height="121dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:padding="4dp"></ImageView>
+
+    <TextView
+        android:id="@+id/AddCommentMovie_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Movie Title"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp">
+    </TextView>
+
+    <RatingBar
+        android:id="@+id/EditCommentRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:numStars="5"
+        android:rating="2.5">
+    </RatingBar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Comment : "
+        android:layout_margin="10dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/EditCommentEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/LeaveComment2"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="20">
+    </EditText>
+
+    <Button
+        android:id="@+id/EditCommentSubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Submit">
+    </Button>
+
+</LinearLayout>

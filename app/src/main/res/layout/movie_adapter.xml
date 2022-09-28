@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:padding="2dp"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/MovieAdapter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/MovieImage"
+            android:layout_width="100dp"
+            android:layout_height="121dp"
+            android:layout_gravity="center"
+            android:padding="4dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/MovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/MovieImage"
+            android:padding="4dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:text="Movie Title">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/MovieGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/MovieImage"
+            android:layout_below="@id/MovieTitle"
+            android:padding="1dp"
+            android:text="Genre">
+        </TextView>
+
+        <TextView
+            android:id="@+id/MovieReleaseYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/MovieImage"
+            android:layout_below="@id/MovieGenre"
+            android:padding="1dp"
+            android:text="Release Year">
+        </TextView>
+
+        <TextView
+            android:id="@+id/IMDBtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/MovieImage"
+            android:layout_below="@id/MovieReleaseYear"
+            android:padding="1dp"
+            android:text="IMDB Rating : ">
+        </TextView>
+        <TextView
+            android:id="@+id/IMDBRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/IMDBtxt"
+            android:layout_below="@id/MovieReleaseYear"
+            android:padding="1dp"
+            android:text="0">
+        </TextView>
+
+        <TextView
+            android:id="@+id/MetaScoretxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IMDBRating"
+            android:layout_toRightOf="@id/MovieImage"
+            android:padding="1dp"
+            android:text="MetaScore : ">
+        </TextView>
+
+        <TextView
+            android:id="@+id/MetaScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/MetaScoretxt"
+            android:layout_below="@id/IMDBRating"
+            android:padding="1dp"
+            android:text="0">
+        </TextView>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/background_design3"
+    android:id="@+id/MovieDetailInfo">
+
+
+    <TextView
+        android:id="@+id/Movie_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="Movie Title"
+        android:layout_margin="10dp"
+        android:background="@drawable/textview_design"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/Movie_Image"
+        android:layout_width="100dp"
+        android:layout_height="121dp"
+        android:padding="4dp"
+        android:layout_below="@id/Movie_Title"
+        android:layout_margin="20dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/Movie_Genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Title"
+        android:layout_toRightOf="@id/Movie_Image"
+        android:text="Genre"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Genre"
+        android:layout_toRightOf="@id/Movie_Image"
+        android:text="Released Year"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Year"
+        android:layout_toRightOf="@id/Movie_Image"
+        android:text="RunTime"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/IMDB_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_imdb_logo_2016"
+        android:layout_below="@id/Movie_Runtime"
+        android:layout_toRightOf="@id/Movie_Image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/IMDB_Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Runtime"
+        android:layout_toRightOf="@id/IMDB_icon"
+        android:text="IMDB Rating"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/Meta_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icons8_metascore"
+        android:layout_below="@id/IMDB_icon"
+        android:layout_toRightOf="@id/Movie_Image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/Meta_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IMDB_Rating"
+        android:layout_toRightOf="@id/Meta_icon"
+        android:text="Meta Score"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/IMDB_Rating">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Certtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Meta_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/Movie_Image"
+        android:text="Movie Certificate : ">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Cert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Meta_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/Movie_Certtxt"
+        android:text="Rating">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Cert"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Movie overview"
+        android:background="@drawable/textview_design">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Directortxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Overview"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Movie Director :">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_DirectorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Directortxt"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="Director Name">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Actortxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_DirectorName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Main Actors :">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Actor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Actortxt"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Actor 1 Name">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Actor2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Actor1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Actor 2 Name">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Actor3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Actor2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Actor 3 Name">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Movie_Actor4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Movie_Actor3"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Actor 4 Name">
+    </TextView>
+
+    <Button
+        android:id="@+id/ViewMovieCommentBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Movie_Actor4"
+        android:text="@string/ViewComment"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/AddToWatchlistBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ViewMovieCommentBtn"
+        android:text="@string/AddToWatchlist"
+        android:layout_centerInParent="true"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

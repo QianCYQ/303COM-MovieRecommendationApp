@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "12891110525",
+    "project_id": "movierecommendationapp-317e8",
+    "storage_bucket": "movierecommendationapp-317e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12891110525:android:a71e0f1cade5585f82c514",
+        "android_client_info": {
+          "package_name": "com.example.movierecommendation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12891110525-4njvo14be4t83t1urpt936n3u99hv86u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALftN9GYx6Q-T_7cqUtYUr5YF_1PiE-GA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12891110525-4njvo14be4t83t1urpt936n3u99hv86u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

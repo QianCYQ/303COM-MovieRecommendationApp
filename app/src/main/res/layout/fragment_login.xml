@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/Loginemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/Loginpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="13"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/LoginBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/LoginBtn"
+            android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/TextForgetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/ForgetPassword"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"/>
+
+</LinearLayout>

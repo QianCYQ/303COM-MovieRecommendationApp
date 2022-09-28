@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/OptionRemove"
+        android:title="Remove from my watchlist" />
+
+    <item
+        android:id="@+id/OptionRecommendation"
+        android:title="Recommend a similar movie" />
+
+</menu>

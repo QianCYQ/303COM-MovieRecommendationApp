@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_fragment"
+        android:background="@drawable/background_design3"
+        android:layout_weight="1"
+        />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/tab_layout_home"
+        android:layout_below="@+id/home_fragment"
+        android:background="@drawable/background_design5"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/movie_icon"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/search_icon"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/person_icon"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>

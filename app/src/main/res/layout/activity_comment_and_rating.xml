@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/background_design3"
+    android:id="@+id/UserCommentRating"
+    tools:context=".MovieComment">
+
+
+    <TextView
+        android:id="@+id/CommentMovie_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="Movie Title"
+        android:layout_margin="10dp"
+        android:background="@drawable/textview_design"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/CommentMovie_Image"
+        android:layout_width="100dp"
+        android:layout_height="121dp"
+        android:padding="4dp"
+        android:layout_below="@id/CommentMovie_Title"
+        android:layout_margin="20dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/CommentMovie_Genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CommentMovie_Title"
+        android:layout_toRightOf="@id/CommentMovie_Image"
+        android:text="Genre"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/CommentMovie_Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CommentMovie_Genre"
+        android:layout_toRightOf="@id/CommentMovie_Image"
+        android:text="Released Year"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/CommentMovie_Runtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CommentMovie_Year"
+        android:layout_toRightOf="@id/CommentMovie_Image"
+        android:text="RunTime"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/CommentIMDB_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_imdb_logo_2016"
+        android:layout_below="@id/CommentMovie_Runtime"
+        android:layout_toRightOf="@id/CommentMovie_Image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/CommentIMDB_Rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CommentMovie_Runtime"
+        android:layout_toRightOf="@id/CommentIMDB_icon"
+        android:text="IMDB Rating"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/CommentMeta_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icons8_metascore"
+        android:layout_below="@id/CommentIMDB_icon"
+        android:layout_toRightOf="@id/CommentMovie_Image"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/CommentMeta_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CommentIMDB_Rating"
+        android:layout_toRightOf="@id/CommentMeta_icon"
+        android:text="Meta Score"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@id/CommentIMDB_Rating">
+    </TextView>
+
+    <TextView
+        android:id="@+id/CommentMovie_Certtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CommentMeta_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/CommentMovie_Image"
+        android:text="Movie Certificate : ">
+    </TextView>
+
+    <TextView
+        android:id="@+id/CommentMovie_Cert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/CommentMeta_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/CommentMovie_Certtxt"
+        android:text="Rating">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/CommentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_below="@id/CommentMovie_Cert"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:fabSize="normal"
+        android:id="@+id/AddCommentButton"
+        app:backgroundTint="@color/blue"
+        android:src="@drawable/add_icon"
+        android:layout_margin="15dp">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</RelativeLayout>

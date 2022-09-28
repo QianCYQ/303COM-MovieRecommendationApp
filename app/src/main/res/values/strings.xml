@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">MovieRecommendation</string>
+    <string name="LoginBtn">Login</string>
+    <string name="SignUpBtn">Sign Up</string>
+    <string name="RegisterBtn">Register</string>
+    <string name="BackToLogin"><u>Return to Login page</u></string>
+    <string name="AddToWatchlist">Add To Watchlist</string>
+    <string name="ViewComment">View users comments and ratings</string>
+
+    <string name="PreferenceSetting"><i>Preference Setting</i></string>
+    <string name="PreferenceSetting_Genre"><i>I prefer movie in genre...</i></string>
+    <string name="PreferenceSetting_Year"><i>I prefer movie in year...</i></string>
+    <string name="Watchlist"><i>My Watchlist</i></string>
+    <string name="Logout"><i>Logout</i></string>
+    <string name="EditGenreOrYear"><b>Edit your preference</b></string>
+    <string name="MovieRange">1920 – 2020</string>
+    <string name="PickMovie"><b>Pick a movie</b></string>
+    <string name="PickMovie2"><b>by recommendation</b></string>
+
+    <string name="Recommendation1"><b>Make recommendation</b></string>
+    <string name="Recommendation2"><b>by my preference</b></string>
+
+    <string name="Select1"><b>1. Choose the movie genre</b></string>
+    <string name="Select2"><b>2. Enter the movie year</b></string>
+    <string name="LeaveComment"><b>Leave your movie review and rating now!</b></string>
+    <string name="LeaveComment2">Write down your review about this movie!</string>
+
+    <string-array name="GenreList">
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Animation</item>
+        <item>Biography</item>
+        <item>Comedy</item>
+        <item>Crime</item>
+        <item>Drama</item>
+        <item>Family</item>
+        <item>Fantasy</item>
+        <item>Film-Noir</item>
+        <item>History</item>
+        <item>Horror</item>
+        <item>Music</item>
+        <item>Musical</item>
+        <item>Mystery</item>
+        <item>Romance</item>
+        <item>Sci-Fi</item>
+        <item>Sport</item>
+        <item>Thriller</item>
+        <item>War</item>
+        <item>Western</item>
+    </string-array>
+
+
+    <string name="ForgetPassword"><u>Forget Password? Click here to reset</u></string>
+    <string name="MainTitle">Movie Recommendation App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
