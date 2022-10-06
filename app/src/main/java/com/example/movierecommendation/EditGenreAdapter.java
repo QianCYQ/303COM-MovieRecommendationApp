@@ -60,7 +60,7 @@ public class EditGenreAdapter extends RecyclerView.Adapter<EditGenreAdapter.Edit
         holder.mEditGenreCheckbox.setChecked(checkboxModel.isSelected());
 
 
-        fStore.collection("UserInfo").whereArrayContains("Users_Prefer_Genre",checkboxModel.getGenre())
+        fStore.collection("UserInfo").whereEqualTo(FieldPath.documentId(), mGetDocumentID).whereArrayContains("Users_Prefer_Genre",checkboxModel.getGenre())
                 .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
