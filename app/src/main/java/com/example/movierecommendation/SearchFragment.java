@@ -24,6 +24,7 @@ import com.opencsv.CSVReader;
 
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Random;
 
 /**
@@ -59,7 +60,7 @@ public class SearchFragment extends Fragment {
 
         mCardViewRecommendation2.setVisibility(view.INVISIBLE);
         loadUserInfo();
-        mCardViewRecommendation2.setVisibility(view.getVisibility());
+        mCardViewRecommendation2.setVisibility(view.VISIBLE);
 
         mCardViewRecommendation1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -100,13 +101,20 @@ public class SearchFragment extends Fragment {
                         YearMinInt = document.getLong("User_Preference_Year_Min").intValue();
                         YearMaxInt = document.getLong("User_Preference_Year_Max").intValue();
 
-                        Random random = new Random();
-                        int number = random.nextInt(GenreList.size());
-                        int number2 = random.nextInt(GenreList.size());
-                        int number3 = random.nextInt(GenreList.size());
-                        Genre1 = GenreList.get(number);
-                        Genre2 = GenreList.get(number2);
-                        Genre3 = GenreList.get(number3);
+                        if(GenreList.size() == 0){
+                            mCardViewRecommendation2.setVisibility(View.INVISIBLE);
+                        }
+                        else{
+                            mCardViewRecommendation2.setVisibility(View.VISIBLE);
+                            Random random = new Random();
+                            int number = random.nextInt(GenreList.size());
+                            int number2 = random.nextInt(GenreList.size());
+                            int number3 = random.nextInt(GenreList.size());
+                            Genre1 = GenreList.get(number);
+                            Genre2 = GenreList.get(number2);
+                            Genre3 = GenreList.get(number3);
+                        }
+
                     }
                 }
             }
